@@ -1,0 +1,10 @@
+<div id="container-exp">
+	<div id="trial">
+		<h1>Bonus</h1>
+<input type="button" value="spin" style="float:left;" id="spin" />
+<canvas id="canvas" width="500" height="500"></canvas>			
+			
+			
+			</div>
+			
+</div>

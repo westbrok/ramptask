@@ -1,0 +1,35 @@
+[HIT Configuration]
+title = Ramping Decision Making
+description = Make a series of decisions on varying rewards.
+amt_keywords = Decision Making, Psychology
+lifetime = 24
+us_only = true
+approve_requirement = 95
+contact_email_on_error = brown.lncc@gmail.com
+ad_group = js psych simple experiment example
+psiturk_keywords = decision-making
+organization_name = Brown University
+browser_exclude_rule = MSIE, mobile, tablet
+
+[Database Parameters]
+database_url = mysql://mueller_user:19serviceAlbat3918@py2151nsxyl.clps.brown.edu:3306/psiturk-probselection
+table_name = ramp 
+
+[Server Parameters]
+host = 0.0.0.0
+port = 22378
+cutoff_time = 60
+logfile = server.log
+loglevel = 2
+debug = true
+login_username = examplename
+login_pw = examplepassword
+threads = auto
+
+[Task Parameters]
+experiment_code_version = 1.0
+num_conds = 1
+num_counters = 1
+
+[Shell Parameters]
+launch_in_sandbox_mode = true

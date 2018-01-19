@@ -1,0 +1,58 @@
+<div id="container-instructions">
+
+    <h1>Instructions</h1>
+
+    <hr>
+
+    <div class="instructions well">
+
+        <p>
+            In this experiment, you will undergo a series of trials.
+            At the start of each trial, you will be promised an amount of money.
+        </p>
+         <p>
+        <img id="TrialPromise" src="/static/images/TrialStart2.png"width="294" height="199" alt="TrialStartImg" style="float: left; padding-left: 35px" />
+        </p>
+        <p>
+        <br><br>After initiating the trial, a progress bar will start filling up. In order to claim the money, you will have to wait until the progress bar fills up and press spacebar once,
+        QUICKLY after the progress bar is full.
+        </p>
+        <p>
+        <img id="ProgressBar" src="/static/images/ProgressBar3.png"width="294" height="199" alt="ProgressBarImg" style="float: left; padding-left: 35px"/>
+        </p>
+         <p>
+        <br><br>If you press spacebar before the progress bar is full, you will forfeit the money on that trial.
+        </p>
+	   <p>
+        <img id="TrialFail" src="/static/images/TrialFail.png"width="294" height="199" alt="TrialFailImg" style="float: left; padding-left: 35px"/>
+        </p>
+ 	   <p>
+	   <br>Likewise, if you wait too long before pressing spacebar after the progress bar fills up, the money will disappear.
+        </p>
+
+        <script type="text/javascript">
+        //console.log(psiTurk.getInstructionIndicator())
+        </script>
+
+    </div>
+
+    <hr>
+
+    <div class="instructionsnav">
+        <div class="row">
+            <div class="col-xs-2">
+                <button type="button" id="next" value="next" class="btn btn-primary btn-lg previous">
+                <span class="glyphicon glyphicon-arrow-left"></span> Previous
+                </button>
+            </div>
+            <div class="col-xs-8">
+            </div>
+            <div class="col-xs-2">
+                <button type="button" id="next" value="next" class="btn btn-primary btn-lg continue">
+                Next <span class="glyphicon glyphicon-arrow-right"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div>

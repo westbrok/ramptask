@@ -1,0 +1,66 @@
+<div id="container-instructions">
+
+    <h1>Instructions</h1>
+
+    <hr>
+
+    <div class="instructions well" align >
+
+        <p>
+            On some trials, a question will appear at some point while the progress bar fills up, temporarily pausing the trial.<br>
+        </p>
+        <p>
+            This question will offer you the choice to gamble on the trial. If you decide to gamble, press 'g'. You will have one second to decide.                         
+        </p>
+        <p>
+        <img id="Gamble2" src="/static/images/Gamble2.png"width="294" height="199" alt="GambleImg" />
+        </p>
+
+
+         <p>
+		If you would rather not gamble, don't press anything and the gamble option will disappear once one second has gone by. The trial will then proceed normally. <br> <br> <br>
+		
+        </p>
+         <p>
+            If you decide to gamble, the trial will be stopped. However, choosing to gamble won't impact the total time a trial lasts. You will still wait the amount of time you would have if you had not decided to gamble before the next trial starts. . YOU WILL NOT FIND OUT WHETHER YOU HAVE WON OR LOST UNTIL THE END OF THE EXPERIMENT. </p>
+   		<p>
+        <img id="Gambled" src="/static/images/Gambled.png"width="294" height="199" alt="GambledImg" />
+        </p>
+ 	   <p>
+            At the end of the experiment, one of your trials will be chosen.
+            If you decided not to gamble on that particular trial and pressed spacebar at the correct time, the amount of money you got on that trial will be added as a bonus to your earnings. <br><br>
+        </p>
+         <p>
+           If you DID decide to gamble on that particular trial, a roulette wheel will appear and the gamble will be initated. If you gambled and won, the amount of money will be added as a bonus to your earnings.
+        </p>
+        <p>
+        The first three trials will be clearly marked practice trials that won't be picked for the bonus trial.
+        
+        </p>
+
+        <script type="text/javascript">
+        //console.log(psiTurk.getInstructionIndicator())
+        </script>
+
+    </div>
+
+    <hr>
+
+    <div class="instructionsnav">
+        <div class="row">
+            <div class="col-xs-2">
+                <button type="button" id="next" value="next" class="btn btn-primary btn-lg previous">
+                <span class="glyphicon glyphicon-arrow-left"></span> Previous
+                </button>
+            </div>
+            <div class="col-xs-8">
+            </div>
+            <div class="col-xs-2">
+                <button type="button" id="next" value="next" class="btn btn-primary btn-lg continue">
+                Next <span class="glyphicon glyphicon-arrow-right"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div>

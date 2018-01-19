@@ -1,0 +1,85 @@
+<div id="container-instructions">
+
+    <h1>Instructions</h1>
+
+    <hr>
+
+    <div class="instructions well">
+
+        <p>
+         Click the checkboxes next to the statements that are true. Once you have clicked 
+          all of the correct statements, check your answers. You will not be able to
+           advance until they are all correct. <br><br><br>
+           
+            I can press spacebar multiple times once the progress bar fills up to get my reward: <input type="checkbox" id="q1">
+        </p>
+         <p>
+            If I choose to gamble on a trial, that trial ends and I forfeit the guaranteed reward: <input type="checkbox" id="q2">
+        </p>
+         <p>
+            I only have one second to claim reward once progress bar fills up: <input type="checkbox" id="q3">
+        </p>
+         <p>
+            If I choose to gamble, I find out right away if I won: <input type="checkbox" id="q4">
+        </p>
+         <p>
+            Every trial contains an option to gamble: <input type="checkbox" id="q5">
+        </p>
+        <p>
+            Assuming I've ignored the gamble, I need to press spacebar once the progress bar fills up to claim reward: <input type="checkbox" id="q6">
+        </p>
+        <button onclick="checkAns()">Check answers</button><br><br>
+ 		<p  id="p1">
+        </p>
+
+  
+        <script type="text/javascript">
+        var heading="btn btn-success btn-lg continue";
+        //class="btn btn-success btn-lg continue";
+        document.getElementById("p1").innerHTML = "";
+        function checkAns(){
+        if(!$('#q1').is(':checked') &
+        $('#q2').is(':checked') &
+        $('#q3').is(':checked') &
+        !$('#q4').is(':checked') &
+        !$('#q5').is(':checked') &
+        $('#q6').is(':checked')
+       ) {
+		document.getElementById("p1").innerHTML = "Correct! Press 'Begin Experiment' to start first trial. After clicking 'Begin' you will not need your mouse, just your keyboard.";
+		return true;
+		
+    }
+    else{
+    document.getElementById("p1").innerHTML = "Not quite right";
+	return false;
+	}
+    }
+    
+        </script>
+
+    </div>
+
+    <hr>
+
+    <div class="instructionsnav">
+        <div class="row">
+            <div class="col-xs-2">
+            	<!--  Maybe not previous button on this screen? -->
+                <button type="button" id="next" value="next" class="btn btn-primary btn-lg previous">
+                <span class="glyphicon glyphicon-arrow-left"></span> Previous
+                </button>
+            </div>
+            <div class="col-xs-8">
+            	<center>
+	                <button type="button" id="next" value="next" class="btn btn-success btn-lg continue" style="">
+	                Begin experiment <span class="glyphicon glyphicon-arrow-right"></span>
+	                </button>
+	            </center>
+            </div>
+            <div class="col-xs-2">
+
+            </div>
+        </div>
+    </div>
+
+</div>
